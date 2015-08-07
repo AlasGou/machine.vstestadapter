@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.githubusercontent.com/JonathanWilkins/machine.vstestadapter/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/jonathanwilkins/machine.vstestadapter</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/JonathanWilkins/machine.vstestadapter/master/Source/Machine.VSTestAdapter.VSIX/Machine.VSTestAdapter-32x32.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags> test, Unit Testing, Testing, TDD, BDD, MSpec, machine.specifications </tags>
+  </metadata>
+</package>
