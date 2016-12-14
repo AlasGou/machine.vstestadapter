@@ -27,6 +27,14 @@ namespace Machine.VSTestAdapter
 
             Settings settings = GetSettings(runContext);
 
+            var testProperty = TestProperty.Register("MSpecTag", "Machine.Specification Tag", typeof(string), typeof(MSpecTestAdapter));
+
+            var supportedProperties = new Dictionary<string, TestProperty>();
+            supportedProperties["Tags"] = testProperty;
+
+
+            var testCaseExpression = runContext.GetTestCaseFilter(supportedProperties.Keys, (propertyName) => supportedProperties[propertyName]);
+
             foreach (string currentAsssembly in sources.Distinct())
             {
                 try
