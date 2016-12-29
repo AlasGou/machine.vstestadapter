@@ -23,10 +23,6 @@ namespace Machine.VSTestAdapter.Discovery.BuiltIn
 
         private IEnumerable<MSpecTestCase> CreateTestCase(Context context, string assemblyPath)
         {
-
-            SourceCodeLocationFinder locationFinder = new SourceCodeLocationFinder(assemblyPath);
-
-
             foreach (Specification spec in context.Specifications.ToList())
             {
                 MSpecTestCase testCase = new MSpecTestCase();
@@ -44,13 +40,6 @@ namespace Machine.VSTestAdapter.Discovery.BuiltIn
                 else
                     fieldDeclaringType = spec.FieldInfo.DeclaringType.FullName;
                     
-                SourceCodeLocationInfo locationInfo = locationFinder.GetFieldLocation(fieldDeclaringType, spec.FieldInfo.Name);
-                if (locationInfo != null)
-                {
-                    testCase.CodeFilePath = locationInfo.CodeFilePath;
-                    testCase.LineNumber = locationInfo.LineNumber;
-                }
-
 
                 if (context.Tags != null)
                     testCase.Tags = context.Tags.Select(tag => tag.Name).ToArray();

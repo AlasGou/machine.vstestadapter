@@ -13,9 +13,6 @@ namespace Machine.VSTestAdapter.Specs.Discovery.BuiltIn
             MSpecTestCase discoveredSpec = Results.SingleOrDefault(x => "should_have_the_same_hash_code".Equals(x.SpecificationName, StringComparison.Ordinal) && 
                                                                           "CustomActAssertDelegateSpec".Equals(x.ClassName, StringComparison.Ordinal));
             discoveredSpec.ShouldNotBeNull();
-
-            discoveredSpec.LineNumber.ShouldEqual(31);
-            discoveredSpec.CodeFilePath.EndsWith("CustomActAssertDelegateSpec.cs", StringComparison.Ordinal);
         };
     }
 }

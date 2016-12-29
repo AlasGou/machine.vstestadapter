@@ -91,10 +91,6 @@
     <Compile Include="Discovery\BuiltIn\When_discovering_behaviors.cs" />
     <Compile Include="Discovery\BuiltIn\When_discovering_specs_in_nested_types.cs" />
     <Compile Include="Discovery\BuiltIn\When_discovering_specs_with_custom_act_assert_delegates.cs" />
-    <Compile Include="Discovery\Cecil\When_discovering_behaviors.cs" />
-    <Compile Include="Discovery\Cecil\When_discovering_specs.cs" />
-    <Compile Include="Discovery\Cecil\When_discovering_specs_in_nested_types.cs" />
-    <Compile Include="Discovery\Cecil\When_discovering_specs_with_custom_act_assert_delegates.cs" />
     <Compile Include="Discovery\With_DiscoverySetup.cs" />
     <Compile Include="Execution\RunListener\TestCaseMapperBehavior.cs" />
     <Compile Include="Execution\RunListener\When_there_is_an_error_reported.cs" />

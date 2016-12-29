@@ -15,10 +15,6 @@ namespace Machine.VSTestAdapter.Discovery
         public string SpecificationDisplayName { get; set; }
         public string SpecificationName { get; set; }
 
-        public string CodeFilePath { get; set; }
-
-        public int LineNumber { get; set; }
-
         public string[] Tags { get; set; }
     }
 }

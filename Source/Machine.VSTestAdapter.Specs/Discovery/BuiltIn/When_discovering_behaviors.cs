@@ -15,9 +15,6 @@ namespace Machine.VSTestAdapter.Specs.Discovery.BuiltIn
             MSpecTestCase discoveredSpec = Results.SingleOrDefault(x => "sample_behavior_test".Equals(x.SpecificationName, StringComparison.Ordinal) && 
                                                                           "BehaviorSampleSpec".Equals(x.ClassName, StringComparison.Ordinal));
             discoveredSpec.ShouldNotBeNull();
-
-            discoveredSpec.LineNumber.ShouldEqual(14);
-            discoveredSpec.CodeFilePath.EndsWith("BehaviorSample.cs", StringComparison.Ordinal);
         };
     }
 }

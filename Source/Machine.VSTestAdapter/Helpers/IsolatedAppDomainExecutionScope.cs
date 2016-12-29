@@ -52,11 +52,7 @@ namespace Machine.VSTestAdapter.Helpers
         private static AppDomain CreateAppDomain(string assemblyPath, string appName)
         {
             CopyRequiredRuntimeDependencies(new[] {
-                typeof(IsolatedAppDomainExecutionScope<>).Assembly,
-                typeof(Mono.Cecil.MemberReference).Assembly,
-                typeof(Mono.Cecil.Pdb.PdbReader).Assembly,
-                typeof(Mono.Cecil.Mdb.MdbReader).Assembly,
-                typeof(Mono.Cecil.Rocks.ILParser).Assembly,
+                typeof(IsolatedAppDomainExecutionScope<>).Assembly
             }, Path.GetDirectoryName(assemblyPath));
 
             AppDomainSetup setup = new AppDomainSetup();
